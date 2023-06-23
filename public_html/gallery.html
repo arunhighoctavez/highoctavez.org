@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- #BeginTemplate "master.dwt" -->
+<head>
+	<!-- #BeginEditable "doctitle" -->
+	<title>High Octavez: Gallery</title>
+	<!-- #EndEditable -->
+	<meta name="description" content="High Octavez" />
+	<meta name="keywords" content="karaoke, band, Dallas, music performance" />
+	<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1" />
+	<link rel="stylesheet" type="text/css" media="screen" href="css/default.css" />
+	<link rel="icon" href="images/favicon.jpg" type="image/png" />
+	<script type="text/javascript" src="scripts/common.js"></script>
+	<script type="text/javascript" src="scripts/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="scripts/jquery.lightbox-0.5.min.js"></script>
+	<link rel="stylesheet" type="text/css" media="screen" href="scripts/css/jquery.lightbox-0.5.css" />
+	<script type="text/javascript">
+		var currentYear = (new Date).getFullYear();
+	</script>
+	<!-- #BeginEditable "Custom Styles or Scripts" -->
+		
+	<link href="css/gallery.css" rel="stylesheet" type="text/css" media="screen" />
+	<script type="text/javascript">
+		//Preloaded slideshow script- By Jason Moon
+		//For this script and more
+		//Visit http://www.dynamicdrive.com
+		
+		// images folder & # of images
+		var imagesFolder = 'images/gallery/';
+		
+		// PUT THE URL'S OF YOUR IMAGES INTO THIS ARRAY...
+		var pics = new Array();
+		pics[0] = 'High Octavez Slide.jpg';
+		pics[1] = 'asha1.jpg';
+		pics[2] = 'sangam1.jpg';
+		pics[3] = 'sangam2.jpg';
+		pics[4] = 'IMG_5398.jpg';
+		pics[5] = 'IMG_9844.jpg';
+		pics[6] = 'IMG_5444.jpg';
+		pics[7] = 'IMG_9842.jpg';
+		pics[8] = 'small acts1.jpg';		
+		pics[9] = 'IMG_5903.jpg';
+		pics[10] = 'IMG_9865.jpg';
+		pics[11] = 'IMG_9889.jpg';
+		pics[12] = 'DSC_0245.jpg';
+
+		var altText = new Array();
+		altText[0] = 'High Octavez';
+		altText[1] = 'Asha';
+		altText[2] = 'Sangam 1';
+		altText[3] = 'Sangam 2';
+		altText[4] = 'Pics at various shows';
+		altText[5] = 'Pics at various shows';
+		altText[6] = 'Pics at various shows';
+		altText[7] = 'Pics at various shows';
+		altText[8] = 'Pics at various shows';
+		altText[9] = 'Pics at various shows';
+		altText[10] = 'Pics at various shows';
+		altText[11] = 'Pics at various shows';
+		altText[12] = 'High Octavez members';
+
+		var numImages = pics.length;
+		
+		function showSlide(slideNumber) { 
+			var imageFile = imagesFolder + pics[slideNumber];
+			if ((slideNumber >= 0) && (slideNumber < numImages)) {
+				// switch to selected image
+			    document.images['pic'].src = imageFile;
+			    document.images['pic'].alt = altText[slideNumber];
+			    
+			    // change background and color of selected slide number
+			    for (var i=0; i < numImages; i++) {
+			    	//alert("button" + i);
+			    	var myButton = document.getElementById("button" + i);
+			    	//alert(myButton.id);
+			    	if (i == slideNumber)
+			    		myButton.className = "slideShowButtonSelected";
+			    	else
+			    		myButton.className = "slideShowButton";
+			    }
+			}
+			return true;
+		}
+	
+		function startSlideShow() {
+			showSlide(0);
+		}
+	</script>
+	
+	<!-- #EndEditable -->
+</head>
+<!-- #BeginEditable "Body tag" -->
+<body>
+<!-- #EndEditable -->
+<div id="outside_container">
+	<div id="header"></div> 
+	<div id="topmenu">
+		<ul id="menu">
+			<!-- #BeginEditable "Top Menu" -->
+			
+			<li><a href="default.html">Home</a></li>
+			<li><a href="karuna.html">Karuna</a></li>
+			<li><a href="events.html">Events</a></li>
+			<li><a href="gallery.html" class="current">Gallery</a></li>
+			<li><a href="media.html">Media</a></li>
+			<li><a href="aboutus.html">About Us</a></li>
+															
+			<!-- #EndEditable -->
+		</ul>
+	</div> 
+	<div id="container">
+		<div id="content">
+			<!-- #BeginEditable "Main Content" -->
+
+			<div id="gallery">
+				<input type="button" id="button0" value="1" onclick="showSlide(0)" class="slideShowButton" />
+				<input type="button" id="button1" value="2" onclick="showSlide(1)" class="slideShowButton" />
+				<input type="button" id="button2" value="3" onclick="showSlide(2)" class="slideShowButton" />
+				<input type="button" id="button3" value="4" onclick="showSlide(3)" class="slideShowButton" />
+				<input type="button" id="button4" value="5" onclick="showSlide(4)" class="slideShowButton" />
+				<input type="button" id="button5" value="6" onclick="showSlide(5)" class="slideShowButton" />
+				<input type="button" id="button6" value="7" onclick="showSlide(6)" class="slideShowButton" />
+				<input type="button" id="button7" value="8" onclick="showSlide(7)" class="slideShowButton" />
+				<input type="button" id="button8" value="9" onclick="showSlide(8)" class="slideShowButton" />
+				<input type="button" id="button9" value="10" onclick="showSlide(9)" class="slideShowButton" />
+				<input type="button" id="button10" value="11" onclick="showSlide(10)" class="slideShowButton" />
+				<input type="button" id="button11" value="12" onclick="showSlide(11)" class="slideShowButton" />
+				<input type="button" id="button12" value="13" onclick="showSlide(12)" class="slideShowButton" />
+				<br />
+				<br />
+				<a class="thumbnail" href="#thumb">
+					<img name="pic" alt="pic" class="thumbnail" src="images/gallery/High Octavez Slide.jpg" />
+				</a>
+			</div>
+
+			<!-- #EndEditable -->
+		</div>
+	</div>
+	<div id="footer">
+		Copyright &copy; 2010-<script>document.write(new Date().getFullYear())</script> High Octavez
+	</div>  
+</div>  
+</body>
+<!-- #EndTemplate -->
+</html>
+
+

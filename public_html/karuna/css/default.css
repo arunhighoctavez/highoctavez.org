@@ -1,0 +1,263 @@
+﻿body {
+	margin: 0px;
+	padding: 0px;
+	background-color:#11090a;
+	/*font-family:Verdana; Harrington, Times New Roman, Times, serif, Arial, Helvetica, sans-serif;*/
+	color:#ff8e08;
+	text-align:center;
+}
+#outside_container {
+	width:1099px;
+	border:none;
+	margin:0 auto 0 auto;
+}
+#header {
+	border-style: none;
+	border-color: inherit;
+	border-width: medium;
+	background: url('HOLogoHeader.png') no-repeat;
+	width: 1099px;
+	height: 196px;
+	margin: 0px;
+	padding: 0px;
+}
+#topmenu {
+	border-style: none;
+	border-color: inherit;
+	border-width: medium;
+	background: url('page_menu.jpg') no-repeat;
+	font-family:Harrington;
+	width:1099px;
+	height:64px;
+}
+#container {
+	border-style: none;
+	border-color: inherit;
+	border-width: medium;
+	/*background: url('page_body.jpg') no-repeat;*/
+	background: url('HOPageBody.png') no-repeat;
+	font-family:Verdana;
+	width: 1099px;
+	height:650px;
+	min-height:600px;
+}
+#footer {
+	border-style: none;
+	border-color: inherit;
+	border-width: medium;
+	padding: 5px;
+	background: url('page_footer.gif') no-repeat;
+	text-align:center;
+	vertical-align:middle;
+	width:1099px;
+	color:#FFFFCC;
+	font-size:small;
+}
+.firstLetter { 
+	font-size:45px;
+	float:left;
+} 
+
+/*====== MENU ==== */
+ul#menu
+{
+	margin: 0 auto;
+	padding: 0;
+	list-style-type: none;
+	position: relative;
+	display: block;
+	height: 64px;
+	font-size: 18px;
+	font-weight: bold;
+	background: url('../../css/images/nav_bg.png') repeat-x left top;
+	color:#FFFFCC;
+	text-align: left;
+	width: 1000px;
+	vertical-align: middle;
+	padding: 0 0 0 160px;
+}
+ul#menu li
+{
+	display:inline;
+	margin:0;
+	padding:0;
+	width:125px;
+	text-align:center;
+}
+ul#menu li a
+{
+	display: inline;
+	color: #FFFFCC;
+	text-decoration: none;
+	font-weight: bold;
+	float: left;
+	padding: 22px 0 20px 0;
+	width: 125px;
+	text-align: center;
+}
+ul#menu li a:hover
+{
+	color:#ff8e08;
+	border: none;
+}
+ul#menu li a.current
+{
+	color:#FFFF00;
+}
+#content {
+	width:800px;
+	padding:10px 5px 10px 5px;
+	margin: 10px auto 10px auto;
+	text-align:left;
+}
+
+/* ====== Karuna page ===== */
+.karunaPageHeader {
+	color:#FF3300;  /*#33CC33;*/
+	font-family:Harrington;
+	font-size:36px;
+	font-weight:bold;
+	text-align:center;
+}
+.karunaPageSubHeader {
+	color:#FF3300;  /*#33CC33;*/
+	font-family:Harrington;
+	font-size:30px;
+	font-weight:bold;
+	text-align:center;
+}
+.karunaHeaderText {
+	font-size:20px;
+	font-style:normal;
+	color:#FF0066;
+	text-align:center;
+	line-height:20px;
+}
+.karunaHeaderSubText {
+	font-size:17px;
+	font-style:normal;
+	color:#ff8e08;
+	text-align:center;
+	line-height:20px;
+}
+.karunaPageText {
+	font-size:17px;
+	font-style:normal;
+	color:#CC9900;
+	text-align:justify;
+}
+.karunaPageTextBold {
+	font-size:15px;
+	font-weight:bold;
+	color:#CC9900;
+	text-align:justify;
+}
+.karunaLink {
+	font-size:17px;
+	color:#FFFFFF;
+}
+.karunaPatientName {
+	font-size:15px;
+	font-style:normal;
+	font-weight:bold;
+	color:#FFCC00;
+	text-align:justify;
+}
+.karunaPatientText {
+	font-size:15px;
+	font-style:normal;
+	color:#CC9900;
+	text-align:justify;
+}
+.karunaPatientAltText {
+	font-size:15px;
+	font-style:normal;
+	color:#CC9900;
+	text-align:justify;
+}
+.karunaAddressText {
+	font-size:15px;
+	font-style:normal;
+	color:#CC9900;
+	text-align:justify;
+}
+.payasamMelaOrderHeader {
+	font-size:15px;
+	font-weight:bold;
+	color:#ff8e08;
+}
+.payasamMelaOrderText {
+	font-size:15px;
+	font-style:normal;
+	color:#CC9900;
+}
+.foodOrderHeader {
+	font-size:14px;
+	font-weight:bold;
+	color:#ff8e08;
+}
+.foodOrderText {
+	font-size:14px;
+	font-style:normal;
+	color:#CC9900;
+}
+.orderTableHeader {
+	font-size:14px;
+	font-weight:bold;
+	color:#ff8e08;
+	background-color:#333333;
+	border-bottom:1px black solid;
+	padding:5px 0 5px 0;
+}
+.orderHeader {
+	font-size:13px;
+	font-weight:bold;
+	color:#ff8e08;
+	background-color:#666666;
+	padding:2px 0 2px 0;
+}
+.orderText {
+	font-size:13px;
+	font-style:normal;
+	color:black;
+	background-color:#CCCCCC;
+}
+
+/* ====== Event registration page ===== */
+.registerForm {
+	margin: 0 auto;
+	width: 500px;
+}
+.formLabel {
+	font-size:13px;
+	font-weight:bold;
+	color:#ff8e08;
+	background-color:#666666;
+	padding:2px 0 2px 5px;
+	text-align:left;
+}
+.formText {
+	font-size:13px;
+	font-style:normal;
+	font-weight:normal;
+	color:black;
+	background-color:#CCCCCC;
+}
+.formCheckbox
+{
+	display:block;
+	height:13px;
+	line-height:1.4em;
+	margin:6px 0 0 3px;
+	width:13px;
+}
+.formCheckboxLabel {
+	color:black;
+	display:block;
+	font-size:100%;
+	font-weight:normal;
+	line-height:1.4em;
+	margin:-1.75em 0 0 20px;
+	padding:4px 0 5px 5px;
+	width:90%;
+}

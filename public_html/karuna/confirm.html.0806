@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- #BeginTemplate "master.dwt" -->
+<head>
+	<!-- #BeginEditable "doctitle" -->
+	<title>"Karuna - Compassion for Humanity", Payasamela August 2015</title>
+	<!-- #EndEditable -->
+	<meta name="description" content="High Octavez" />
+	<meta name="keywords" content="karuna, fund raising, Dallas, music performance" />
+	<meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1" />
+	<link rel="stylesheet" href="css/default.css" type="text/css" media="screen" />
+	<link rel="icon" href="images/favicon.jpg" type="image/png" />
+	<script type="text/javascript" src="common.js"></script>
+	<script type="text/javascript" src="jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="jquery.lightbox-0.5.min.js"></script>
+	<link rel="stylesheet" type="text/css" media="screen" href="jquery.lightbox-0.5.css" />
+	<!-- #BeginEditable "Custom Styles or Scripts" -->
+
+	<script type="text/javascript">
+	    $(function() {
+	        $('#gallery a').lightBox();
+	    });
+    </script>
+
+<script type="text/javascript">
+function getUrlParameters(parameter, staticURL, decode){
+   var currLocation = (staticURL.length)? staticURL : window.location.search,
+       parArr = currLocation.split("?")[1].split("&"),
+       returnBool = true;
+
+   for(var i = 0; i < parArr.length; i++){
+        parr = parArr[i].split("=");
+        if(parr[0] == parameter){
+            return (decode) ? decodeURIComponent(parr[1]) : parr[1];
+            returnBool = true;
+        }else{
+            returnBool = false;
+        }
+   }
+
+   if(!returnBool) return false;
+}
+</script>
+
+
+	<!-- #EndEditable -->
+</head>
+<!-- #BeginEditable "Body tag" -->
+<body>
+<!-- #EndEditable -->
+<div id="outside_container">
+	<div id="header"></div>
+	<div id="topmenu">
+		<ul id="menu">
+			<!-- #BeginEditable "Top Menu" -->
+
+			<li><a href="../default.html">Home</a></li>
+			<li><a href="../charity.html" class="current">Charity</a></li>
+			<li><a href="../events.html">Events</a></li>
+			<li><a href="../gallery.html">Gallery</a></li>
+			<li><a href="../media.html">Media</a></li>
+			<li><a href="../aboutus.html">About Us</a></li>
+
+			<!-- #EndEditable -->
+		</ul>
+	</div>
+	<div id="container">
+		<div id="content">
+			<!-- #BeginEditable "Main Content" -->
+
+			<table cellpadding="2" cellspacing="0" border="0" width="100%">
+				<tr valign="middle">
+					<td class="karunaHeaderSubText">High Octavez presents</td>
+				</tr>
+				<tr valign="middle">
+					<td class="karunaPageHeader">Karuna - Compassion For Humanity</td>
+				</tr>
+				<tr valign="middle">
+					<td class="karunaHeaderText">Payasamela on the special occasion of Onam</span></td>
+				</tr>
+				<tr><td>&nbsp;</td></tr>
+			</table>
+			<table cellpadding="2" cellspacing="0" border="0" style="width:100%">
+				<tr valign="top">
+					<td style="width:30px;">When:</td>
+					<td style="width:500px;">
+						<span class="karunaPageText">Saturday, 22nd August 2015 2:00 PM </span><br/>
+						<br/>
+					</td>
+
+				</tr>
+				<tr valign="top">
+					<td>Where:</td>
+					<td class="karunaPageText">
+						<a href="https://www.google.com/maps/place/National+Imports/@32.9917885,-96.8885926,15z/data=!4m2!3m1!1s0x0:0x8267189e50d272ee"
+							target="_blank" class="karunaLink">
+							National Imports</a>, 2830 N Josey Ln, Carrollton, TX 75007<br/>
+
+					</td>
+				</tr>
+				<tr valign="top">
+					<td style="display:none">Tickets:</td>
+					<td style="text-align:left;display:none">
+						<a href="http://events.sulekha.com/karuna-tamil-live-concert-jan-11-3-pm_event-in_lewisville-tx_291644" target="_blank" class="karunaLink">
+							3 PM show</a>&nbsp;&amp;
+						<a href="http://events.sulekha.com/karuna-tamil-live-concert-jan-11-7-pm_event-in_lewisville-tx_291645" target="_blank" class="karunaLink">
+							7 PM show</a>&nbsp;(buy on Sulekha.com)
+					</td>
+				</tr>
+				<tr valign="bottom">
+					<td class="karunaPageText" colspan="2">
+						please contact: <a href="mailto:contactus@highoctavez.org"
+							class="karunaLink">contactus@highoctavez.org</a> for more details
+	<p><big><b>	Please Review your Preorder form :</b></big><br /></p>
+
+</td>
+<td></td>				</tr></table>
+
+
+
+<form name="myForm"  target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+<input type="hidden" name="cmd" value="_cart">
+<input type="hidden" name="business" value="highoctavez@highoctavez.net">
+<input type="hidden" name="lc" value="US">
+<input type="hidden" name="upload" value="1">
+
+<SCRIPT>
+
+var ara = getUrlParameters("ara", "", true);
+var par = getUrlParameters("par", "", true);
+var sha = getUrlParameters("sha", "", true);
+var cha = getUrlParameters("cha", "", true);
+var paa = getUrlParameters("paa", "", true);
+var paz = getUrlParameters("paz", "", true);
+var paap = getUrlParameters("paap", "", true);
+var whe = getUrlParameters("whe", "", true);
+var sem = getUrlParameters("sem", "", true);
+
+var i=1;
+if(ara > 0)
+{
+	document.write('<input type="hidden" name="item_name_' +i+'" value="Aravana Payasam">');
+	document.write('<input type="hidden" name="amount_' +i+'" value="10">');
+	document.write('<input type="hidden" name="quantity_' +i+'" value="' +ara+'">');
+	i++;
+}
+
+if(par > 0)
+{
+	document.write('<input type="hidden" name="item_name_' +i+'" value="Paripu Payasam">');
+	document.write('<input type="hidden" name="amount_' +i+'" value="12">');
+	document.write('<input type="hidden" name="quantity_' +i+'" value="' +par+'">');
+	i++;
+}
+
+if(sha > 0)
+{
+	document.write('<input type="hidden" name="item_name_' +i+'" value="Shankara Ada Payasam">');
+	document.write('<input type="hidden" name="amount_' +i+'" value="13">');
+	document.write('<input type="hidden" name="quantity_' +i+'" value="' +sha+'">');
+	i++;
+}
+
+if(cha > 0)
+{
+	document.write('<input type="hidden" name="item_name_' +i+'" value="Chakka Payasam">');
+	document.write('<input type="hidden" name="amount_' +i+'" value="13">');
+	document.write('<input type="hidden" name="quantity_' +i+'" value="' +cha+'">');
+	i++;
+}
+
+if(paa > 0)
+{
+	document.write('<input type="hidden" name="item_name_' +i+'" value="Paal Ada Payasam">');
+	document.write('<input type="hidden" name="amount_' +i+'" value="11">');
+	document.write('<input type="hidden" name="quantity_' +i+'" value="' +paa+'">');
+	i++;
+}
+
+if(paz > 0)
+{
+	document.write('<input type="hidden" name="item_name_' +i+'" value="Pazham Payasam">');
+	document.write('<input type="hidden" name="amount_' +i+'" value="13">');
+	document.write('<input type="hidden" name="quantity_' +i+'" value="' +paz+'">');
+	i++;
+}
+
+if(paap > 0)
+{
+	document.write('<input type="hidden" name="item_name_' +i+'" value="Paal Payasam Ari">');
+	document.write('<input type="hidden" name="amount_' +i+'" value="11">');
+	document.write('<input type="hidden" name="quantity_' +i+'" value="' +paap+'">');
+	i++;
+}
+
+if(whe > 0)
+{
+	document.write('<input type="hidden" name="item_name_' +i+'" value="Wheat Payasam Sharkara">');
+	document.write('<input type="hidden" name="amount_' +i+'" value="12">');
+	document.write('<input type="hidden" name="quantity_' +i+'" value="' +whe+'">');
+	i++;
+}
+
+if(sem > 0)
+{
+	document.write('<input type="hidden" name="item_name_' +i+'" value="Semiya Payasam">');
+	document.write('<input type="hidden" name="amount_' +i+'" value="10">');
+	document.write('<input type="hidden" name="quantity_' +i+'" value="' +sem+'">');
+	i++;
+}
+
+
+</SCRIPT>
+<table cellpadding="1" cellspacing="0" border="0" style="width:100%">
+			<tr valign="top">
+					<td style="width:5px;">Aravana Payasam $10 : </td>
+					<td style="width:5px;">
+
+<SCRIPT> var ara = getUrlParameters("ara", "", true); if(ara > 0)
+ document.write( ara); else document.write( "0");</script>
+					</td>
+				</tr>
+			<tr valign="top">
+					<td style="width:5px;">Paripu Payasam $12 : </td>
+					<td style="width:5px;">
+<SCRIPT> var par = getUrlParameters("par", "", true);  if(par > 0)
+document.write( par); else document.write( "0");</script>
+					</td>
+				</tr>
+			<tr valign="top">
+					<td style="width:5px;">Shankara Ada Payasam $13 :</td>
+					<td style="width:5px;">
+<SCRIPT> var sha = getUrlParameters("sha", "", true);  if(sha > 0)
+document.write( sha);else document.write( "0"); </script>
+					</td>
+				</tr>
+			<tr valign="top">
+					<td style="width:5px;">Chakka Payasam $13 : </td>
+					<td style="width:5px;">
+<SCRIPT> var cha = getUrlParameters("cha", "", true);  if(cha > 0)
+document.write( cha);else document.write( "0"); </script>
+					</td>
+				</tr>
+			<tr valign="top">
+					<td style="width:5px;">Paal Ada Payasam $11 : </td>
+					<td style="width:5px;">
+<SCRIPT> var paa = getUrlParameters("paa", "", true);  if(paa > 0)
+document.write( paa);else document.write( "0"); </script>
+					</td>
+				</tr>
+			<tr valign="top">
+					<td style="width:5px;">Pazham Payasam $13 : </td>
+					<td style="width:5px;">
+<SCRIPT> var paz = getUrlParameters("paz", "", true);  if(paz > 0)
+document.write( paz);else document.write( "0"); </script>
+					</td>
+				</tr>
+			<tr valign="top">
+					<td style="width:5px;">Paal Payasam (Ari) $11 : </td>
+					<td style="width:5px;">
+<SCRIPT> var paap = getUrlParameters("paap", "", true); if(paap > 0)
+ document.write( paap);else document.write( "0"); </script>
+					</td>
+				</tr>
+			<tr valign="top">
+					<td style="width:5px;">Wheat Payasam (Sharkara) $12 : </td>
+					<td style="width:5px;">
+<SCRIPT> var whe = getUrlParameters("whe", "", true);  if(whe > 0)
+document.write( whe);else document.write( "0"); </script>
+					</td>
+				</tr>
+			<tr valign="top">
+					<td style="width:5px;">Semiya Payasam $10 : </td>
+					<td style="width:5px;">
+<SCRIPT> var sem = getUrlParameters("sem", "", true);  if(sem > 0)
+document.write( sem);else document.write( "0"); </script>
+					</td>
+				</tr>
+
+
+
+
+<input type="hidden" name="currency_code" value="USD">
+</table>
+<br>
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+
+			<!-- #EndEditable -->
+		</div>
+	</div>
+	<div id="footer">
+		Copyright &copy; 2010-2013 High Octavez
+	</div>
+</div>
+</body>
+<!-- #EndTemplate -->
+</html>
+
+

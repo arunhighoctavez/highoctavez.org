@@ -1,0 +1,246 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><!-- #BeginTemplate "master.dwt" -->
+<head><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<!-- #BeginEditable "doctitle" -->
+	<title>StarQuest 2018, a music and dance showdown, hosted by High Octavez</title>
+	<!-- #EndEditable -->
+	<meta content="High Octavez" name="description" />
+	<meta content="karuna, fund raising, Dallas, music performance" name="keywords" />
+	<link href="css/default.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="images/favicon.jpg" rel="icon" type="image/png" /><script type="text/javascript" src="scripts/common.js"></script><script type="text/javascript" src="scripts/jquery-1.8.2.min.js"></script><script type="text/javascript" src="scripts/jquery.lightbox-0.5.min.js"></script>
+	<link href="scripts/jquery.lightbox-0.5.css" media="screen" rel="stylesheet" type="text/css" /><!-- #BeginEditable "Custom Styles or Scripts" --><script type="text/javascript">
+	    $(function() {
+	        $('#gallery a').lightBox();
+	    });
+	    
+		function getUrlParameters(parameter, staticURL, decode){
+		   var currLocation = (staticURL.length)? staticURL : window.location.search,
+		       parArr = currLocation.split("?")[1].split("&"),
+		       returnBool = true;
+		
+		   for(var i = 0; i < parArr.length; i++){
+		        parr = parArr[i].split("=");
+		        if(parr[0] == parameter){
+		            return (decode) ? decodeURIComponent(parr[1]) : parr[1];
+		            returnBool = true;
+		        }else{
+		            returnBool = false;
+		        }
+		   }
+		
+		   if(!returnBool) return false;
+		}
+	</script><!-- #EndEditable -->
+</head>
+<!-- #BeginEditable "Body tag" -->
+<body><!-- #EndEditable -->
+<div id="outside_container">
+<div id="header"></div>
+
+<div id="topmenu">
+<ul id="menu"><!-- #BeginEditable "Top Menu" -->
+	<li><a href="../default.html">Home</a></li>
+	<li><a class="current" href="../karuna.html">Karuna</a></li>
+	<li><a href="../events.html">Events</a></li>
+	<li><a href="../gallery.html">Gallery</a></li>
+	<li><a href="../media.html">Media</a></li>
+	<li><a href="../aboutus.html">About Us</a></li>
+	<!-- #EndEditable -->
+</ul>
+</div>
+
+<div id="container">
+<div id="content"><!-- #BeginEditable "Main Content" -->
+<table border="0" cellpadding="2" cellspacing="0" width="100%">
+	<tbody>
+		<tr style="height:5px;">
+			<td></td>
+		</tr>
+		<tr valign="middle">
+			<td class="karunaPageSubHeader">StarQuest Registration</td>
+		</tr>
+		<tr style="height:5px;">
+			<td></td>
+		</tr>
+	</tbody>
+</table>
+<br/>
+<table border="0" cellpadding="2" cellspacing="0" style="width:100%">
+	<tbody>
+		<tr valign="top">
+			<td style="width:100%;text-align:center">				
+				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" name="myForm" target="paypal" class="registerForm">
+					<input name="cmd" type="hidden" value="_xclick" /> 
+					<input name="business" type="hidden" value="highoctavez@highoctavez.net" /> 
+					<input name="lc" type="hidden" value="US" /> 
+					<input name="upload" type="hidden" value="1" />
+					<input name="currency_code" type="hidden" value="USD" />
+					<input name="return" type="hidden" value="www.highoctavez.net/karuna/buyTicketsConfirmSQ.html" />
+					<SCRIPT>
+						// get data entered							
+						var name = getUrlParameters("name", "", true);
+						var email = getUrlParameters("email", "", true);
+						var phone = getUrlParameters("phone", "", true);
+						var music = getUrlParameters("music", "", true);
+						var danceSolo = getUrlParameters("danceSolo", "", true);
+						var danceGroup = getUrlParameters("danceGroup", "", true);
+						var category = getUrlParameters("category", "", true);
+						
+						// get event fees
+						var musicFees = 20;
+						var danceSoloFees = 20;
+						var danceGroupFees = 60;
+						var total = 0;
+						
+						// save data entered and calculate total fees
+						var i=0;
+						var itemName = "";
+						if(name != "") {
+							name = name.replace("+", " ");
+							itemName = itemName + name;
+							i++;
+						}
+						if(email != "") {
+							itemName = itemName + " (" + email;
+							i++;
+						}
+						if(phone != "") {
+							itemName = itemName + " / " + phone + ") * ";
+							i++;
+						}
+						if(category != "") {
+							category = category.replace("+", " ");
+							itemName = itemName + "Category: " + category + " * ";
+							i++;
+						}
+						if(music != "" || danceSolo != "" || danceGroup != "") 	{
+							var events = "";
+							
+							if(music != "") {
+								events = "Music";
+								total = total + musicFees;
+							}
+							if(danceSolo != "") {
+								if (events == "") {
+									events = "Dance (Solo)";
+								}
+								else {
+									events = events + ", " + "Dance (Solo)";
+								}
+								total = total + danceSoloFees;
+							}
+							if(danceGroup != "") {
+								if (events == "") {
+									events = "Dance (Group)";
+								}
+								else {
+									events = events + ", " + "Dance (Group)";
+								}
+								total = total + danceGroupFees;
+							}
+							itemName = itemName + "Event(s): " + events;
+							i++;
+						}
+						if(i < 5)
+						{
+							alert("Please enter Name, Email and Phone, select a Category and pick at least one Event, before clicking on Register");
+							window.location = "registerSQ.html";
+						}
+						else {
+							var totalFeesStr = "$" + total;
+							document.write('<input type="hidden" name="item_name" value="' + itemName + '">');
+							document.write('<input type="hidden" name="amount" value="' + total + '">');
+						}
+					</SCRIPT>
+					<table border="0" cellpadding="2" cellspacing="0" style="width:100%;font-size:13px">
+						<thead>
+							<tr>
+								<td colspan="3" class="orderTableHeader" style="text-align:center">Contact Info</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr style="height:0px;display:none">
+								<td style="width:110px"></td>
+								<td style="width:140px"></td>
+								<td style="width:140px"></td>
+							</tr>
+							<tr class="formText" valign="middle">
+								<td colspan="3">
+									Please review your registration information below
+								</td>
+							</tr>
+							<tr style="height:2px">
+								<td colspan="3"></td>
+							</tr>
+							<tr class="formLabel" valign="middle">
+								<td class="formLabel">Name</td>
+								<td colspan="2" class="formText">&nbsp;
+									<script>document.write(name);</script>
+								</td>
+							</tr>
+							<tr class="formLabel" valign="middle">
+								<td class="formLabel">Email Address</td>
+								<td colspan="2" class="formText">&nbsp;
+									<script>document.write(email);</script>
+								</td>
+							</tr>
+							<tr class="formLabel" valign="middle">
+								<td class="formLabel">Phone</td>
+								<td colspan="2" class="formText">&nbsp;
+									<script>document.write(phone);</script>
+								</td>
+							</tr>
+							<tr class="formLabel" valign="middle">
+								<td class="formLabel">Entry Category</td>
+								<td colspan="2" class="formText">&nbsp;
+									<script>document.write(category);</script>
+								</td>
+							</tr>
+							<tr class="formLabel" valign="middle">
+								<td class="formLabel">Event(s)</td>								
+								<td colspan="2" class="formText">&nbsp;
+									<script>document.write(events);</script>
+								</td>
+							</tr>
+							<tr class="formLabel" valign="middle">
+								<td class="formLabel">Total Fees</td>
+								<td colspan="2" class="formText">&nbsp;
+									<script>document.write(totalFeesStr);</script>
+								</td>
+							</tr>
+							<tr style="height:2px">
+								<td colspan="3"></td>
+							</tr>
+							<tr style="height:5px;background-color:white;">
+								<td colspan="3"></td>
+							</tr>
+							<tr valign="middle" style="background-color:white;">
+								<td colspan="3" style="text-align:center">
+									<input name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" type="image" alt="PayPal - The safer, easier way to pay online!" border="0" /> 
+									<img alt="" border="0" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" />
+								</td>
+							</tr>
+							<tr style="height:5px;background-color:white;">
+								<td colspan="3"></td>
+							</tr>
+						</tbody>
+					</table>
+				</form>
+			</td>
+		</tr>
+		<tr>
+			<td id="eventsOlder"><a href="registerSQ.html" target="_self"><img alt="go back" id="eventsNavIconLeft" src="images/arrow_left.png" /> </a></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</tbody>
+</table>
+
+<!-- #EndEditable --></div>
+</div>
+
+<div id="footer">Copyright &copy; 2010-<script>document.write(new Date().getFullYear())</script> High Octavez</div>
+</div>
+</body>
+<!-- #EndTemplate --></html>

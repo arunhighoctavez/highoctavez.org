@@ -1,0 +1,353 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><!-- #BeginTemplate "master.dwt" -->
+<head><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<!-- #BeginEditable "doctitle" -->
+	<title>Karuna - Compassion for Humanity, live concert in Malayalam</title>
+	<!-- #EndEditable -->
+	<meta content="High Octavez" name="description" />
+	<meta content="karuna, fund raising, Dallas, music performance" name="keywords" />
+	<link href="css/default.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="images/favicon.jpg" rel="icon" type="image/png" /><script type="text/javascript" src="scripts/common.js"></script><script type="text/javascript" src="scripts/jquery-1.8.2.min.js"></script><script type="text/javascript" src="scripts/jquery.lightbox-0.5.min.js"></script>
+	<link href="scripts/jquery.lightbox-0.5.css" media="screen" rel="stylesheet" type="text/css" /><!-- #BeginEditable "Custom Styles or Scripts" --><script type="text/javascript">
+	    $(function() {
+	        $('#gallery a').lightBox();
+	    });
+	    
+		function getUrlParameters(parameter, staticURL, decode){
+		   var currLocation = (staticURL.length)? staticURL : window.location.search,
+		       parArr = currLocation.split("?")[1].split("&"),
+		       returnBool = true;
+		
+		   for(var i = 0; i < parArr.length; i++){
+		        parr = parArr[i].split("=");
+		        if(parr[0] == parameter){
+		            return (decode) ? decodeURIComponent(parr[1]) : parr[1];
+		            returnBool = true;
+		        }else{
+		            returnBool = false;
+		        }
+		   }
+		
+		   if(!returnBool) return false;
+		}
+	</script><!-- #EndEditable -->
+	<script async defer data-domain="highoctavez.org" src="https://plausible.io/js/plausible.js"></script>
+</head>
+<!-- #BeginEditable "Body tag" -->
+<body><!-- #EndEditable -->
+<div id="outside_container">
+<div id="header"></div>
+
+<div id="topmenu">
+<ul id="menu"><!-- #BeginEditable "Top Menu" -->
+	<li><a href="../default.html">Home</a></li>
+	<li><a class="current" href="../karuna.html">Karuna</a></li>
+	<li><a href="../events.html">Events</a></li>
+	<li><a href="../gallery.html">Gallery</a></li>
+	<li><a href="../media.html">Media</a></li>
+	<li><a href="../aboutus.html">About Us</a></li>
+	<!-- #EndEditable -->
+</ul>
+</div>
+
+<div id="container">
+<div id="content"><!-- #BeginEditable "Main Content" -->
+<table border="0" cellpadding="2" cellspacing="0" width="100%">
+	<tbody>
+		<tr valign="middle">
+			<td class="karunaHeaderSubText">High Octavez presents</td>
+		</tr>
+		<tr valign="middle">
+			<td class="karunaPageHeader">Karuna - Compassion For Humanity</td>
+		</tr>
+		<tr valign="middle">
+			<td class="karunaHeaderText">Oru Thalai Ragam</td>		
+		</tr>		
+		<tr>
+			<td></td>
+		</tr>
+		<tr valign="top">
+			<td class="karunaPageText">
+				A fun-filled evening with Live Music to raise funds to help people in need. <span>Click&nbsp; 
+				<a class="karunaLink" href="images/Karuna202302.png" target="_blank">here</a> &nbsp;for more details about the event.</span>			
+			</td>
+		</tr>
+	</tbody>
+</table>
+<br/>
+<table border="0" cellpadding="2" cellspacing="0" style="width:100%">
+	<tbody>
+		<tr valign="top">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td rowspan="6">				
+				<form action="https://www.paypal.com/cgi-bin/webscr" method="post" name="myForm" target="paypal">
+					<input name="cmd" type="hidden" value="_cart" /> 
+					<input name="business" type="hidden" value="contactus@highoctavez.org" /> 
+					<input name="lc" type="hidden" value="US" /> 
+					<input name="upload" type="hidden" value="1" /> 
+					<SCRIPT>							
+						var name = getUrlParameters("name", "", true);
+						name = decodeURIComponent(name).replace(/\+/g, " ");
+						var email = getUrlParameters("email", "", true);
+						var ticket1 = getUrlParameters("ticket1", "", true);
+						var ticket2 = getUrlParameters("ticket2", "", true);
+						var ticket3 = getUrlParameters("ticket3", "", true);
+						var ticket4 = getUrlParameters("ticket4", "", true);
+						var ticket5 = getUrlParameters("ticket5", "", true);
+						
+						var eventName = "Oru Thalai Ragam 2023"
+						var ticket1Label = eventName + " VIP (Feb 24) ticket(s)"
+						var ticket2Label = eventName + " Regular (Feb 24) ticket(s)"
+						var ticket3Label = eventName + " VIP (Feb 25) ticket(s)"
+						var ticket4Label = eventName + " Regular (Feb 25) ticket(s)"
+						var ticket5Label = eventName + " Streaming ticket(s)"
+						var ticket1Cost = 50
+						var ticket2Cost = 30
+						var ticket3Cost = 50
+						var ticket4Cost = 30
+						var ticket5Cost = 20
+						document.write('<input type="hidden" name="item_name_4" value="' + name + '">');
+
+						var i=1;
+						if(ticket1 > 0) {
+							if(name != "")
+								ticket1Label = ticket1Label + ' for ' + name;
+							if(email != "")
+								ticket1Label = ticket1Label + ' (' + email + ')';
+							document.write('<input type="hidden" name="item_name_' + i +'" value="' + ticket1Label + '">');
+							document.write('<input type="hidden" name="amount_' + i +'" value="' + ticket1Cost + '">');
+							document.write('<input type="hidden" name="quantity_' + i +'" value="' + ticket1 +'">');
+							i++;
+						}
+						if(ticket2 > 0) {
+							if(name != "")								
+								ticket2Label = ticket2Label + ' for ' + name;
+							if(email != "")
+								ticket2Label = ticket2Label + ' (' + email + ')';
+							document.write('<input type="hidden" name="item_name_' + i +'" value="' + ticket2Label + '">');
+							document.write('<input type="hidden" name="amount_' + i +'" value="' + ticket2Cost + '">');
+							document.write('<input type="hidden" name="quantity_' + i +'" value="' + ticket2 +'">');
+							i++;
+						}
+						if(ticket3 > 0) {
+							if(name != "")
+								ticket3Label = ticket3Label + ' for ' + name;
+							if(email != "")
+								ticket3Label = ticket3Label + ' (' + email + ')';
+							document.write('<input type="hidden" name="item_name_' + i +'" value="' + ticket3Label + '">');
+							document.write('<input type="hidden" name="amount_' + i +'" value="' + ticket3Cost + '">');
+							document.write('<input type="hidden" name="quantity_' + i +'" value="' + ticket3 +'">');
+							i++;
+						}
+						if(ticket4 > 0) {
+							if(name != "")
+								ticket4Label = ticket4Label + ' for ' + name;
+							if(email != "")
+								ticket4Label = ticket4Label + ' (' + email + ')';
+							document.write('<input type="hidden" name="item_name_' + i +'" value="' + ticket4Label + '">');
+							document.write('<input type="hidden" name="amount_' + i +'" value="' + ticket4Cost + '">');
+							document.write('<input type="hidden" name="quantity_' + i +'" value="' + ticket4 +'">');
+							i++;
+						}
+						if(ticket5 > 0) {
+							if(name != "")
+								ticket5Label = ticket5Label + ' for ' + name;
+							if(email != "")
+								ticket5Label = ticket5Label + ' (' + email + ')';
+							document.write('<input type="hidden" name="item_name_' + i +'" value="' + ticket5Label + '">');
+							document.write('<input type="hidden" name="amount_' + i +'" value="' + ticket5Cost + '">');
+							document.write('<input type="hidden" name="quantity_' + i +'" value="' + ticket5 +'">');
+							i++;
+						}
+
+						if(i == 1) {
+							alert("Please enter a ticket quantity and click Add to Cart");
+							window.location = "buyTickets.html";
+						}
+					</SCRIPT>
+					<table border="0" cellpadding="2" cellspacing="0" style="width:500px;font-size:13px">
+						<thead>
+							<tr>
+								<td colspan="4" class="orderTableHeader" style="text-align:center">Buy Tickets</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="orderText" valign="middle">
+								<td colspan="4">
+									Please review your order below:
+								</td>
+							</tr>
+							<tr class="orderHeader" valign="middle">
+								<td style="width:200px;border-bottom:1px #996600 solid">Ticket Type</td>
+								<td style="width:60px;text-align:center;border-bottom:1px #996600 solid">Price</td>
+								<td style="width:60px;text-align:center;border-bottom:1px #996600 solid">Tickets</td>
+								<td style="width:60px;text-align:right;border-bottom:1px #996600 solid">Cost</td>
+							</tr>
+							<SCRIPT>
+								var tickets = "";
+								var price = 0;
+								var amount = 0;
+								var cost = 0;
+								var total = 0;
+								
+								amount = ticket1;
+								if(amount > 0)
+								{
+									tickettype = ticket1Label;
+									price = ticket1Cost;
+									cost = amount * price;
+									total = total + cost;
+									document.write('<tr valign="top" class="orderText">');
+									document.write('<td>' + tickettype + '</td>');
+									document.write('<td style="text-align:center">$' + price + '</td>');
+									document.write('<td style="text-align:center">');
+									document.write(amount);
+									document.write('</td>');
+									document.write('<td style="text-align:right">$');
+									document.write(cost);
+									document.write('</td></tr>');
+								}
+				
+								amount = ticket2;
+								if(amount > 0)
+								{
+									tickettype = ticket2Label;
+									price = ticket2Cost;
+									cost = amount * price;
+									total = total + cost;
+									document.write('<tr valign="top" class="orderText">');
+									document.write('<td>' + tickettype + '</td>');
+									document.write('<td style="text-align:center">$' + price + '</td>');
+									document.write('<td style="text-align:center">');
+									document.write(amount);
+									document.write('</td>');
+									document.write('<td style="text-align:right">$');
+									document.write(cost);
+									document.write('</td></tr>');
+								}
+								
+								amount = ticket3;
+								if(amount > 0)
+								{
+									tickettype = ticket3Label;
+									price = ticket3Cost;
+									cost = amount * price;
+									total = total + cost;
+									document.write('<tr valign="top" class="orderText">');
+									document.write('<td>' + tickettype + '</td>');
+									document.write('<td style="text-align:center">$' + price + '</td>');
+									document.write('<td style="text-align:center">');
+									document.write(amount);
+									document.write('</td>');
+									document.write('<td style="text-align:right">$');
+									document.write(cost);
+									document.write('</td></tr>');
+								}
+								
+								amount = ticket4;
+								if(amount > 0)
+								{
+									tickettype = ticket4Label;
+									price = ticket4Cost;
+									cost = amount * price;
+									total = total + cost;
+									document.write('<tr valign="top" class="orderText">');
+									document.write('<td>' + tickettype + '</td>');
+									document.write('<td style="text-align:center">$' + price + '</td>');
+									document.write('<td style="text-align:center">');
+									document.write(amount);
+									document.write('</td>');
+									document.write('<td style="text-align:right">$');
+									document.write(cost);
+									document.write('</td></tr>');
+								}
+
+								amount = ticket5;
+								if(amount > 0)
+								{
+									tickettype = ticket5Label;
+									price = ticket5Cost;
+									cost = amount * price;
+									total = total + cost;
+									document.write('<tr valign="top" class="orderText">');
+									document.write('<td>' + tickettype + '</td>');
+									document.write('<td style="text-align:center">$' + price + '</td>');
+									document.write('<td style="text-align:center">');
+									document.write(amount);
+									document.write('</td>');
+									document.write('<td style="text-align:right">$');
+									document.write(cost);
+									document.write('</td></tr>');
+								}
+			
+								if(total > 0)
+								{
+									document.write('<tr valign="top" class="orderHeader" style="font-weight:bold;">');
+									document.write('<td style="border-top:1px #996600 solid;font-weight:bold;" colspan="3">Total Cost</td>');
+									document.write('<td style="border-top:1px #996600 solid;font-weight:bold;text-align:right">$');
+									document.write(total);
+									document.write('</td></tr>');
+								}			
+							</SCRIPT>
+							<tr valign="middle" style="background-color:white">
+								<td colspan="4" style="text-align:center">
+									<input type="hidden" name="hosted_button_id" value="KEFSZ9J2BEDNJ">
+									<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+									<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">								
+								</td>
+							</tr>
+							<!--<tr valign="middle" style="background-color:white">
+								<td colspan="4" style="text-align:center">
+									<input name="currency_code" type="hidden" value="USD" /> 
+									<input alt="PayPal - The safer, easier way to pay online!" border="0" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" type="image" /> 
+									<img alt="" border="0" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" />
+								</td>
+							</tr>-->
+						</tbody>
+					</table>
+				</form>
+			</td>
+		</tr>
+		<tr valign="top">
+			<td style="width:70px;" class="karunaPageTextBold">When:</td>
+			<td style="width:200px;" colspan="2"><span>Feb 24<sup>th</sup> (Friday) &amp; 25<sup>th</sup> (Saturday) 2023 @ 6:00 PM</span></td>
+		</tr>
+		<!--
+		<tr valign="top" style="display:none">
+			<td style="width:70px;" class="karunaPageTextBold">What:</td>
+			<td style="width:80px;"><span><b>2:00 PM </b></span></td>
+			<td><span class="karunaPageText">(matinee)</span></td>
+		</tr>		
+		<tr valign="top">
+			<td style="width:70px;" class="karunaPageTextBold"></td>
+			<td style="width:80px;"><span><b>6:00 PM </b></span></td>
+			<td style="display:none"><span class="karunaPageText">(evening)</span></td>
+		</tr>-->
+		<tr><td><br/></td></tr>
+		<tr valign="top">
+			<td style="width: 70px" class="karunaPageTextBold">Where:</td>
+			<td colspan="2">
+				<a class="karunaLink" href="https://goo.gl/maps/X1jZpysF6GMkegpC8" target="_blank">
+				Irving Arts Center</a>
+				<br />3333 N MacArthur Blvd, Irving, TX 75062
+			</td>
+		</tr>
+		<tr><td><br/><br/></td></tr>
+		<tr>
+			<td id="eventsOlder"><a href="buyTickets.html"><img alt="go back" id="eventsNavIconLeft" src="images/arrow_left.png" /> </a></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</tbody>
+</table>
+
+<!-- #EndEditable --></div>
+</div>
+
+<div id="footer">Copyright &copy; 2010-<script>document.write(new Date().getFullYear())</script> High Octavez</div>
+</div>
+</body>
+<!-- #EndTemplate --></html>
