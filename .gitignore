@@ -1,0 +1,8 @@
+
+# arunisavailable-gh (pointer to ${work}/auth/arunisavailable-gh which contains ssh_keys, pat) folder
+# NOTE: NEVER NEVER NEVER EVER remove this line if the repo is PUBLIC
+credentials
+
+# do not track folder - you may choose to keep docs, your scribbles, your binaries etc here
+do_not_track/
+
