@@ -61,7 +61,7 @@
 			<td class="karunaPageHeader">Karuna - Compassion For Humanity</td>
 		</tr>
 		<tr valign="middle">
-			<td class="karunaHeaderText">Karuna's Andrum Indrum</td>		
+			<td class="karunaHeaderText">Andrum Indrum</td>		
 		</tr>		
 		<tr>
 			<td></td>
@@ -91,6 +91,7 @@
 						var name = getUrlParameters("name", "", true);
 						name = decodeURIComponent(name).replace(/\+/g, " ");
 						var email = getUrlParameters("email", "", true);
+						var ticket0 = getUrlParameters("ticket0", "", true);
 						var ticket1 = getUrlParameters("ticket1", "", true);
 						var ticket2 = getUrlParameters("ticket2", "", true);
 						var ticket3 = getUrlParameters("ticket3", "", true);
@@ -98,20 +99,31 @@
 						var ticket5 = getUrlParameters("ticket5", "", true);
 						
 						var eventName = "Karuna Andrum Indrum 2024"
-						var ticket1Label = eventName + " VVIP ticket(s)"
-						var ticket2Label = eventName + " VIP ticket(s)"
-						var ticket3Label = eventName + " Regular ticket(s)"
-						// var ticket3Label = eventName + " VIP (Feb 25) ticket(s)"
-						// var ticket4Label = eventName + " Regular (Feb 25) ticket(s)"
+						var ticket0Label = eventName + " VVIP ticket(s)"
+						var ticket1Label = eventName + " VIP ticket(s)"
+						var ticket2Label = eventName + " Regular ticket(s)"
+						var ticket3Label = eventName + " VIP (Feb 25) ticket(s)"
+						var ticket4Label = eventName + " Regular (Feb 25) ticket(s)"
 						var ticket5Label = eventName + " Streaming ticket(s)"
-						var ticket1Cost = 100
-						var ticket2Cost = 50
-						var ticket3Cost = 30
-						// var ticket4Cost = 30
+						var ticket0Cost = 100
+						var ticket1Cost = 50
+						var ticket2Cost = 30
+						var ticket3Cost = 50
+						var ticket4Cost = 30
 						var ticket5Cost = 20
 						document.write('<input type="hidden" name="item_name_4" value="' + name + '">');
 
 						var i=1;
+						if(ticket0 > 0) {
+							if(name != "")
+								ticket0Label = ticket0Label + ' for ' + name;
+							if(email != "")
+								ticket0Label = ticket0Label + ' (' + email + ')';
+							document.write('<input type="hidden" name="item_name_' + i +'" value="' + ticket0Label + '">');
+							document.write('<input type="hidden" name="amount_' + i +'" value="' + ticket0Cost + '">');
+							document.write('<input type="hidden" name="quantity_' + i +'" value="' + ticket0 +'">');
+							i++;
+						}
 						if(ticket1 > 0) {
 							if(name != "")
 								ticket1Label = ticket1Label + ' for ' + name;
@@ -193,6 +205,24 @@
 								var cost = 0;
 								var total = 0;
 								
+								amount = ticket0;
+								if(amount > 0)
+								{
+									tickettype = ticket0Label;
+									price = ticket0Cost;
+									cost = amount * price;
+									total = total + cost;
+									document.write('<tr valign="top" class="orderText">');
+									document.write('<td>' + tickettype + '</td>');
+									document.write('<td style="text-align:center">$' + price + '</td>');
+									document.write('<td style="text-align:center">');
+									document.write(amount);
+									document.write('</td>');
+									document.write('<td style="text-align:right">$');
+									document.write(cost);
+									document.write('</td></tr>');
+								}
+								
 								amount = ticket1;
 								if(amount > 0)
 								{
@@ -210,6 +240,7 @@
 									document.write(cost);
 									document.write('</td></tr>');
 								}
+
 				
 								amount = ticket2;
 								if(amount > 0)
@@ -313,7 +344,7 @@
 		</tr>
 		<tr valign="top">
 			<td style="width:70px;" class="karunaPageTextBold">When:</td>
-			<td style="width:250px;" colspan="2"><span><b>Mar 29<sup>th</sup> (Friday) 2024 @ 6:30 PM</b></span></td>
+			<td style="width:250px;" colspan="2"><span><b>Mar 29<sup>th</sup> 2024 (Friday) @ 6:30 PM</b></span></td>
 		</tr>
 		<!--
 		<tr valign="top" style="display:none">
