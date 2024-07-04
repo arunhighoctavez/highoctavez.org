@@ -74,7 +74,7 @@
 					<td class="karunaPageHeader">Payasam Mela</td>
 				</tr>
 				<tr valign="middle">
-					<td class="karunaHeaderText">(on the special occasion of Vishu 2022)</td>
+					<td class="karunaHeaderText">(on the special occasion of Vishu 2024)</td>
 				</tr>
 				<tr><td></td></tr>
 			</table>
@@ -93,7 +93,7 @@
 					<td style="width:35px;" class="karunaPageTextBold">When: </td>
 					<td style="width:280px;">
 						<span>
-							<b>Saturday, 16<sup>th</sup> April 2022</b><br/>
+							<b>Saturday, 13<sup>th</sup> April 2024</b><br/>
 							from 11:00 AM to 3:00 PM
 						</span>
 					</td>
@@ -121,7 +121,7 @@
 								if(ada > 0)
 								{
 									document.write('<input type="hidden" name="item_name_' +i+'" value="Ada Pradhaman">');
-									document.write('<input type="hidden" name="amount_' +i+'" value="15">');
+									document.write('<input type="hidden" name="amount_' +i+'" value="18">');
 									document.write('<input type="hidden" name="quantity_' +i+'" value="' +ada+'">');
 									i++;
 								}
@@ -129,7 +129,7 @@
 								if(ara > 0)
 								{
 									document.write('<input type="hidden" name="item_name_' +i+'" value="Aravana Payasam">');
-									document.write('<input type="hidden" name="amount_' +i+'" value="12">');
+									document.write('<input type="hidden" name="amount_' +i+'" value="15">');
 									document.write('<input type="hidden" name="quantity_' +i+'" value="' +ara+'">');
 									i++;
 								}
@@ -137,7 +137,7 @@
 								if(paa > 0)
 								{
 									document.write('<input type="hidden" name="item_name_' +i+'" value="Paal Ada">');
-									document.write('<input type="hidden" name="amount_' +i+'" value="15">');
+									document.write('<input type="hidden" name="amount_' +i+'" value="18">');
 									document.write('<input type="hidden" name="quantity_' +i+'" value="' +paa+'">');
 									i++;
 								}
@@ -145,19 +145,19 @@
 								if(sem > 0)
 								{
 									document.write('<input type="hidden" name="item_name_' +i+'" value="Semiya Payasam">');
-									document.write('<input type="hidden" name="amount_' +i+'" value="12">');
+									document.write('<input type="hidden" name="amount_' +i+'" value="15">');
 									document.write('<input type="hidden" name="quantity_' +i+'" value="' +sem+'">');
 									i++;
 								}
-								/*
+								
 								if(cha > 0)
 								{
 									document.write('<input type="hidden" name="item_name_' +i+'" value="Chakka Payasam">');
-									document.write('<input type="hidden" name="amount_' +i+'" value="12">');
+									document.write('<input type="hidden" name="amount_' +i+'" value="18">');
 									document.write('<input type="hidden" name="quantity_' +i+'" value="' +cha+'">');
 									i++;
 								}
-													
+								/*				
 								if(paap > 0)
 								{
 									document.write('<input type="hidden" name="item_name_' +i+'" value="Paal (Ari) Payasam">');
@@ -196,7 +196,7 @@
 									window.location = "payasamMela.html";
 								}
 							</SCRIPT>
-							<table cellpadding="2" cellspacing="0" border="0" style="width:450px;font-size:15px;">
+							<table cellpadding="2" cellspacing="0" border="0" style="width:485px;font-size:15px;">
 								<tr style="height:30px;text-align:center;vertical-align:top">
 									<td colspan="4">Please review your pre-order(s) below:</td>
 								</tr>
@@ -217,8 +217,8 @@
 									amount = getUrlParameters("ada", "", true);
 									if(amount > 0)
 									{
-										payasam = "Ada Pradhaman";
-										price = 15;
+										payasam = "Ada Pradhaman (32 Oz)";
+										price = 18;
 										cost = amount * price;
 										total = total + cost;
 										document.write('<tr valign="top" class="payasamMelaOrderText">');
@@ -235,8 +235,8 @@
 									amount = getUrlParameters("ara", "", true);
 									if(amount > 0)
 									{
-										payasam = "Aravana Payasam";
-										price = 12;
+										payasam = "Aravana Payasam (16 Oz)";
+										price = 15;
 										cost = amount * price;
 										total = total + cost;
 										document.write('<tr valign="top" class="payasamMelaOrderText">');
@@ -253,8 +253,8 @@
 									amount = getUrlParameters("paa", "", true);
 									if(amount > 0)
 									{
-										payasam = "Paal Ada";
-										price = 15;
+										payasam = "Paal Ada (32 Oz)";
+										price = 18;
 										cost = amount * price;
 										total = total + cost;
 										document.write('<tr valign="top" class="payasamMelaOrderText">');
@@ -271,8 +271,8 @@
 									amount = getUrlParameters("sem", "", true);
 									if(amount > 0)
 									{
-										payasam = "Semiya Payasam";
-										price = 12;
+										payasam = "Semiya Payasam (32 Oz)";
+										price = 15;
 										cost = amount * price;
 										total = total + cost;
 										document.write('<tr valign="top" class="payasamMelaOrderText">');
@@ -285,12 +285,12 @@
 										document.write(cost);
 										document.write('</td></tr>');
 									}
-/*
+
 									amount = getUrlParameters("cha", "", true);
 									if(amount > 0)
 									{
-										payasam = "Chakka Payasam";
-										price = 12;
+										payasam = "Chakka Payasam (32 Oz)";
+										price = 18;
 										cost = amount * price;
 										total = total + cost;
 										document.write('<tr valign="top" class="payasamMelaOrderText">');
@@ -303,7 +303,7 @@
 										document.write(cost);
 										document.write('</td></tr>');
 									}
-					
+					/*
 									amount = getUrlParameters("paap", "", true);
 									if(amount > 0)
 									{
